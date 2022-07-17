@@ -51,7 +51,6 @@ public class CalculatorWithMemory {
         return result;
     }
     public void saveToMemory() {
-        if(memory[9] != null){
                     CalculateHistory history = new CalculateHistory();
                     history.firstArgument = this.firstArgument;
                     history.operation = this.operation;
@@ -64,20 +63,6 @@ public class CalculatorWithMemory {
                     else {
                         counter++;
                     }
-        }
-        else {
-            for (int i = 0; i < memory.length; i++) {
-                if (memory[i] == null) {
-                    CalculateHistory history = new CalculateHistory();
-                    history.firstArgument = this.firstArgument;
-                    history.operation = this.operation;
-                    history.result = this.result;
-                    history.secondArgument = this.secondArgument;
-                    memory[i] = history;
-                    break;
-                }
-            }
-        }
     }
 
     public static void main(String[] args) {
