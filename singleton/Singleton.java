@@ -2,7 +2,7 @@ package com.company.singleton;
 
 public class Singleton {
 
-    private int id;
+
     private static Singleton singleInstance = null;
 
     public String s;
